@@ -18,13 +18,7 @@ import clsx from 'clsx'
 import { MOCK_TASKS } from '@/lib/mock-data'
 import Image from 'next/image'
 
-export function generateStaticParams() {
-  return MOCK_TASKS.map((task) => ({
-    id: task.id,
-  }))
-}
 
-export const dynamicParams = false
 
 
 export default function TaskDetailPage() {
